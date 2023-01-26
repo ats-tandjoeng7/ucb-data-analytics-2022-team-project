@@ -23,7 +23,9 @@ Andia, Chris, Joey, Liwen, and Parto (alphabetical order).
 
 ### Topic Selection
 
-We began exploring different datasets to address the question of when a company should execute layoffs. Unfortunately, for IPOs, the datasets we found contained less than 500 rows of relevant data. This seemed too small to create a robust machine learning model. We continued to explore different datasets regarding layoffs, but also began exploring the idea of creating a project regarding customer churn. One question to answer regarding customer churn is, what are the factors that lead to a customer either continuing or terminating their involvement (subscription, account, etc.) with the company. After viewing some datasets on telecom and bank customer churn, it seemed that these datasets had sufficient dimmensions (such as tenure and credit score for the bank datasets) and many rows 1000< to create a model. We will continue exploring this idea during the second class of our Final Project. Here is the link of the original dataset selected for our deep dive, [Churn of Bank Customers](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers?resource=download).
+We began exploring different datasets to address the question of when a company should execute layoffs. Unfortunately, for IPOs, the datasets we found contained less than 500 rows of relevant data. This seemed too small to create a robust machine learning model. We continued to explore different datasets regarding layoffs, but also began exploring the idea of creating a project regarding customer churn. One question to answer regarding customer churn is, what are the factors that lead to a customer either continuing or terminating their involvement (subscription, account, etc.) with the company. After viewing some datasets on telecom and bank customer churn, it seemed that these datasets had sufficient dimmensions (such as tenure and credit score for the bank datasets) and many rows over 10000 to create a learning model. We will continue exploring this idea during the second class of our Final Project. Here is the link of the original dataset selected for our deep dive, [Churn of Bank Customers](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers?resource=download).
+
+Questions that our team plans to answer is how predict churn rate of customers based on bank customers' involvement, the reason(s) why customers left, and whether Machine Learning or Neural Network models can help to solve.
 
 ### Purpose of Project
 
@@ -35,8 +37,16 @@ This project was the final team project to cultivate collaboration, team work, a
 
 - Assessment of dataset and database management system (DBMS) is completed (main owner: Parto Tandjoeng).
   - Source code: [DBMS_Analysis.ipynb](./DBMS_Analysis.ipynb).
+  - Our dataset consisted of 10000 rows and 14 columns. A few numeric columns contained some outliers as illustrated in Fig. 1(a)&ndash;(c).
+  - A PostgreSQL database that stores two tables, called **main_df** and **clean_df** was created and can be connected without problems from Python code of each Team Member. We documented some SQL queries for retrieving some data from the database ([DBMS_Analysis.ipynb](./DBMS_Analysis.ipynb)).
 
-- Preprocessing dataset and EDA is 90% completed.
+  <hr>
+  <table><tr><td><img src='Data/CreditScore_boxplot.png' title='(a) Column CreditScore'></td><td><img src='Data/Age_boxplot.png' title='(b) Column Age'></td><td><img src='Data/NumOfProducts_boxplot.png' title='(c) Column NumOfProducts'></td></tr></table>
+
+  **Fig. 1 Boxplots of several numerical columns containing some outliers: (a) Column CreditScore, (b) Column Age, and (c) Column NumOfProducts.**
+  <hr>
+
+- Preprocessing dataset and EDA is completed. The cleaned datasets are stored in [Churn_Modelling_main.csv](./Data/Churn_Modelling_main.csv) and [Churn_Modelling_clean.csv](./Data/Churn_Modelling_clean.csv).
 
 - Currently we have been Working on improving the accuracy and sensitivity of our learning models.
 
