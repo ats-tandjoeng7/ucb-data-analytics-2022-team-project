@@ -8,7 +8,7 @@ This is a team collaboration project relevant to Machine Learning, Neural Networ
   - [Topic Selection](#topic-selection)
   - [Purpose of Project](#purpose-of-project)
   - [Current Status](#current-status)
-- [Segment 1](#segment-1)
+- [Segment 1: Sketch It Out](#segment-1-sketch-it-out)
   - [Roles and Contributions in Segment 1](#roles-and-contributions-in-segment-1)
   - [Next Step](#next-step)
 - [Resources](#resources)
@@ -16,7 +16,11 @@ This is a team collaboration project relevant to Machine Learning, Neural Networ
 
 ## Overview of Project
 
-This project is divided into three Segments: Segment 1, Segment 2, and Segment 3.
+This project is divided into three Segments: Segment 1, Segment 2, and Segment 3. A checkbox with checkmark in it indicates that the corresponding segment and tasks are completed. 
+
+- ✅ Segment 1: Sketch It Out.
+- 🟩 Segment 2: Build and Assemble.
+- ⬜ Segment 3: Put It All Together.
 
 ### Team Member
 
@@ -51,7 +55,7 @@ This project was the final team project to cultivate collaboration, teamwork, an
 
 - Ongoing optimization phases: we have been working on optimizing the accuracy and sensitivity of our learning models.
 
-## Segment 1
+## Segment 1: Sketch It Out
 
 ### Roles and Contributions in Segment 1
 
