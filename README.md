@@ -158,8 +158,9 @@ Our team performed some experiments to test and train our models, build the data
 
 My major roles and contributions in **Segment 2** were as follows:
 
-- A total of 7 commits to the team project GitHub repository.
-- Completed analysis by using four ensemble learning models, called `RandomForestClassifier`, `BalancedRandomForestClassifier`, `EasyEnsembleClassifier`, and `AdaBoostClassifier` for predicting churn rate of customers based on bank customers' involvement ([BankCustomerChurn_ModelSelection.ipynb](./BankCustomerChurn_ModelSelection.ipynb)). We preprocessed our dataset and saved the clean datasets in our team project GitHub and a PostgreSQL database. We mainly used StandardScaler, but scaling was skipped in some cases because Random Forests and Decision Trees are based on tree partitioning algorithms. To ensure there were no overlapping tasks in our team, the rest of the Team Members performed several types of Machine Learning and Neural Network models. I performed the code refactoring, so that our team can run and compare several ML models more efficiently, including two reusable functions for generating summary statistics tables and precision-recall curves ([BankCustomerChurn_ModelSelection.ipynb](./BankCustomerChurn_ModelSelection.ipynb)).
+- A total of 8 commits to the team project GitHub repository.
+- Completed final training and testing of four ensemble learning models, called `RandomForestClassifier`, `BalancedRandomForestClassifier`, `EasyEnsembleClassifier`, and `AdaBoostClassifier` for predicting churn rate of customers based on bank customers' involvement. I also performed the code refactoring, so that our team could run and compare several ML models more efficiently, including two reusable functions for generating summary statistics tables and precision-recall curves ([BankCustomerChurn_ModelSelection.ipynb](./BankCustomerChurn_ModelSelection.ipynb)).
+- Helped summarizing the summary statistics table, feature importances, and defined which ML model our team should pursue.
 - Helped streamlining the structure of our team project GitHub repo and consolidating some paths and files. I also help updating and prettifying our README.md.
 - Maintained the fabricated PostgreSQL database that our team planned to use (Fig. 2).
 
