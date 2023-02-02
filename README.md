@@ -158,7 +158,7 @@ Our team performed some experiments to test and train our models, build the data
 
 My major roles and contributions in **Segment 2** were as follows:
 
-- A total of 8 commits to the team project GitHub repository.
+- A total of 13 commits to the team project GitHub repository.
 - Completed final training and testing of four ensemble learning models, called `RandomForestClassifier`, `BalancedRandomForestClassifier`, `EasyEnsembleClassifier`, and `AdaBoostClassifier` for predicting churn rate of customers based on bank customers' involvement. I also performed the code refactoring, so that our team could run and compare several ML models more efficiently, including two reusable functions for generating summary statistics tables and precision-recall curves ([BankCustomerChurn_ModelSelection.ipynb](./BankCustomerChurn_ModelSelection.ipynb)).
 - Helped summarizing the summary statistics table, feature importances, and defined which ML model our team should pursue.
 - Helped streamlining the structure of our team project GitHub repo and consolidating some paths and files. I also help updating and prettifying our README.md.
