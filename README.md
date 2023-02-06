@@ -182,9 +182,10 @@ We put the final touches on our models, database, and dashboard. Then create and
 My major roles and contributions in **Segment 3** were as follows:
 
 - A total of 15 commits to the team project GitHub repository.
-- Completed final tuning of four ensemble learning models, called `RandomForestClassifier`, `BalancedRandomForestClassifier`, `EasyEnsembleClassifier`, and `AdaBoostClassifier` for predicting churn rate of customers based on bank customers' involvement. I also performed the code refactoring, so that our team could run and compare several ML models more efficiently, including two reusable functions for generating summary statistics tables and precision-recall curves ([BankCustomerChurn_ModelSelection.ipynb](./BankCustomerChurn_ModelSelection.ipynb)).
+- Completed final tuning of the four ensemble learning models for predicting churn rate of customers based on bank customers' involvement. I also performed the code refactoring, so that our team could run and compare several ML models more efficiently, including two reusable functions for generating summary statistics tables and precision-recall curves ([BankCustomerChurn_ModelSelection.ipynb](./BankCustomerChurn_ModelSelection.ipynb)).
+- Helped creating the visualization of our prediction results.
 - Helped summarizing the summary statistics table, feature importances, and defined which ML model our team should pursue.
-- Final touches of our team project GitHub repo and prettifying our README.md prior to the final release.
+- Final touches on our team project GitHub repo and prettifying our README.md doc prior to the final release.
 
 ## References
 
