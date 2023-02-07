@@ -16,6 +16,7 @@ This is a team collaboration project relevant to Machine Learning, Neural Networ
   - [Analysis Results](#analysis-results)
   - [Roles and Contributions in Segment 2](#roles-and-contributions-in-segment-2)
 - [Segment 3: Put It All Together](#segment-3-put-it-all-together)
+  - [Summary](#summary)
   - [Roles and Contributions in Segment 3](#roles-and-contributions-in-segment-3)
 - [References](#references)
 
@@ -94,8 +95,8 @@ Based on our assessment and analysis of the bank customer churn dataset, a few m
 - Is the label variable known? **Yes**. We then narrowed down our models to either supervised learning or neural network models.
 - Is the target variable categorical? **Yes**. Our target variable contained dichotomous (binary) categorical values, which suggested that classification-based supervised learning would be effective in predicting bank customer churn rate.
 - Do our features contain numerical (continuous/interval) and categorical (*object* or *string* data type) values? **Yes**. We then applied Pandas `get_dummies()` method to encode those categorical values.
-- Out of 10000 total rows, the ratio of our target values was approximately 4:1, which could be considered imbalanced. One of the over/undersampling combination techniques called `SMOTEENN` was then employed to rebalance our target values.
-- As for model optimization, we further trained and tested our models by tuning several hyper-parameters to derive the optimal parameters for our final models.
+- Out of 10000 total rows, the ratio of our target values was approximately 4:1, which could be considered imbalanced. One of the over-/under-sampling combination techniques called `SMOTEENN` could be employed to rebalance our target values. BalancedRandomForestClassifier would be better than typical `SMOTEENN` or bagging classifiers because it learns from imbalanced bootstrap samples.
+- As for model optimization, we further trained and tested our models of choice (*Ensemble Learning*) by tuning several hyper-parameters to derive the optimal parameters for our final models.
 
 ### Roles and Contributions in Segment 1
 
@@ -177,14 +178,33 @@ We put the final touches on our models, database, and dashboard. Then create and
 - Will transform the summary statistics table into a fabricated database that can also be used for Tableau dashboard/story.
 - Final touches.
 
+### Summary
+
+**Table 1&ndash;2** summarize the main reasons why we preferred the ensemble learning models over the others for our study.
+
+**Table 2. Assessments of learning model selection (RFC: RandomForestClassifier, BRFC: BalancedRandomForestClassifier, EEC: EasyEnsembleClassifier, ABC: AdaBoostClassifier, NN/DNN: Neural Network/Deep Neural Network, LogisticR: LogisticRegression).**  
+| Learning algorithm            | RFC  | BRFC | EEC  | ABC  | NN/DNN   | LogisticR |
+| :--                           | :--: | :--: | :--: | :--: | :--:     | :--:      |
+| Bagging/Bootstrap Aggregating | Yes  | Yes  | No   | No   | Yes      |  No       |
+| Boosting                      | No   | No   | Yes  | Yes  | Yes      |  No       |
+| Simple & fast training time   | No   | No   | No   | No   | No       |  Yes      |
+| Applicable to large datasets  | Yes  | Yes  | Yes  | Yes  | Yes      |  No       |
+| Applicable to non-linear data | Yes  | Yes  | Yes  | Yes  | Yes      |  No       |
+| Applicable to many features   | Yes  | Yes  | Yes  | Yes  | Yes      |  No       |
+| Require scaling of features   | No   | No   | No   | No   | No       |  Yes      |
+| Robust to under/overfitting   | Yes  | Yes  | No   | No   | No       |  No       |
+| Model interpretation          | Yes  | Yes  | Yes  | Yes  | Black box |  Yes      |
+| Suitable for this project     | 🟢  | 🟢  | 🟢  | 🟡  | 🟡      |  ⛔       |
+| Learning models of choice     | 💚  | 💚    | 💛  | 💛  | 💛      |  💔       |
+
 ### Roles and Contributions in Segment 3
 
 My major roles and contributions in **Segment 3** were as follows:
 
 - A total of 15 commits to the team project GitHub repository.
 - Completed final tuning of the four ensemble learning models for predicting churn rate of customers based on bank customers' involvement. I also performed the code refactoring, so that our team could run and compare several ML models more efficiently, including two reusable functions for generating summary statistics tables and precision-recall curves ([BankCustomerChurn_ModelSelection.ipynb](./BankCustomerChurn_ModelSelection.ipynb)).
-- Helped creating the visualization of our prediction results.
 - Helped summarizing the summary statistics table, feature importances, and defined which ML model our team should pursue.
+- Created the summary and visualization of our model selection and prediction results.
 - Final touches on our team project GitHub repo and prettifying our README.md doc prior to the final release.
 
 ## References
