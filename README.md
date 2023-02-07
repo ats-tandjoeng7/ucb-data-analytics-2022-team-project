@@ -182,7 +182,7 @@ We put the final touches on our models, database, and dashboard. Then create and
 
 **Table 1&ndash;2** summarize the main reasons why we preferred the ensemble learning models over the others for our study.
 
-**Table 2. Assessments of learning model selection (RFC: RandomForestClassifier, BRFC: BalancedRandomForestClassifier, EEC: EasyEnsembleClassifier, ABC: AdaBoostClassifier, NN/DNN: Neural Network/Deep Neural Network, LogisticR: LogisticRegression).**  
+**Table 2. Assessments of learning model selection (_Ensemble Learning_ RFC: RandomForestClassifier, BRFC: BalancedRandomForestClassifier, EEC: EasyEnsembleClassifier, ABC: AdaBoostClassifier, _Artificial Neural Network_ NN/DNN: Neural Network/Deep Neural Network, _Simple Regression_ LogisticR: LogisticRegression).**  
 | Learning algorithm            | RFC  | BRFC | EEC  | ABC  | NN/DNN   | LogisticR |
 | :--                           | :--: | :--: | :--: | :--: | :--:     | :--:      |
 | Bagging/Bootstrap Aggregating | Yes  | Yes  | No   | No   | Yes      |  No       |
@@ -191,7 +191,7 @@ We put the final touches on our models, database, and dashboard. Then create and
 | Applicable to large datasets  | Yes  | Yes  | Yes  | Yes  | Yes      |  No       |
 | Applicable to non-linear data | Yes  | Yes  | Yes  | Yes  | Yes      |  No       |
 | Applicable to many features   | Yes  | Yes  | Yes  | Yes  | Yes      |  No       |
-| Require scaling of features   | No   | No   | No   | No   | No       |  Yes      |
+| Require scaling of features   | No   | No   | No   | No   | Yes/No   |  Yes      |
 | Robust to under/overfitting   | Yes  | Yes  | No   | No   | No       |  No       |
 | Model interpretation          | Yes  | Yes  | Yes  | Yes  | Black box |  Yes      |
 | Suitable for this project     | 🟢  | 🟢  | 🟢  | 🟡  | 🟡      |  ⛔       |
@@ -205,7 +205,7 @@ My major roles and contributions in **Segment 3** were as follows:
 - Completed final tuning of the four ensemble learning models for predicting churn rate of customers based on bank customers' involvement. I also performed the code refactoring, so that our team could run and compare several ML models more efficiently, including two reusable functions for generating summary statistics tables and precision-recall curves ([BankCustomerChurn_ModelSelection.ipynb](./BankCustomerChurn_ModelSelection.ipynb)).
 - Helped summarizing the summary statistics table, feature importances, and defined which ML model our team should pursue.
 - Created the summary and visualization of our model selection and prediction results.
-- Final touches on our team project GitHub repo and prettifying our README.md doc prior to the final release.
+- Final touches on our team project GitHub repo, prettifying our README.md doc prior to the final release, and presentation slides.
 
 ## References
 
